@@ -1,5 +1,6 @@
 <script>
-    import FullscreenPage from "$lib/components/FullscreenPage.svelte";
+    // @ts-ignore
+    import FullscreenPage from "@/components/FullscreenPage.svelte";
     let src = "/videos/bumper_new.mp4"
 </script>
 
