@@ -1,6 +1,6 @@
 <script>
     let scrollY = 0;
-    $: isSCrolled = scrollY > 550 ? true : false;
+    $: isSCrolled = scrollY > 610 ? true : false;
 
 </script>
 
@@ -21,7 +21,7 @@
 
 <style>
     .scrolled {
-        @apply bg-white;
+        @apply bg-white shadow-md;
     }
     .scrolled img {
         @apply w-44 transition-[width] duration-500;
