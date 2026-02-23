@@ -1,3 +1,18 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities'
+@import 'tailwindcss/utilities';
+
+body {
+    @apply overflow-x-hidden w-screen;
+}
+
+#wrapper {
+    @apply min-h-screen w-screen relative;
+}
+
+#wrapper, window {
+    scrollbar-width: none;
+}
+:is(window, #wrapper, body)::-webkit-scrollbar {
+    display: none;
+}
