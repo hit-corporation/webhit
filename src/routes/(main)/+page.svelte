@@ -10,7 +10,7 @@
         <source {src} type="video/mp4"/>
     </video>
 </FullscreenPage>
-<HomePage class="grid grid-cols-2 pb-10 pt-20 px-6">
+<HomePage className="grid grid-cols-2 pb-10 pt-20 px-6">
     <div class="flex flex-col gap-y-2 pe-6">
         <p class="text-xl text-slate-600">Discover Your</p>
         <h4 class="text-4xl mb-3">One-Stop Education AI Solution</h4>
