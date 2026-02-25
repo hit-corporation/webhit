@@ -2,12 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-    @apply overflow-x-hidden w-screen text-slate-700;
+html {
+    @apply h-screen w-screen;
 }
 
-#wrapper, html, body {
-    @apply min-h-screen w-screen relative;
+#wrapper, body {
+    @apply !overflow-x-hidden text-slate-700 min-h-screen w-full relative;
 }
 
 #wrapper, window {

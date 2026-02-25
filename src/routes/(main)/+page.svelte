@@ -8,7 +8,7 @@
     let src = "/videos/bumper_new.mp4"
 </script>
 
-<FullscreenPage className="bg-white/35">
+<FullscreenPage className="bg-slate-800/30">
     <video autoplay muted class="h-full w-full object-cover absolute -z-10">
         <source {src} type="video/mp4"/>
     </video>
@@ -28,16 +28,17 @@
     <div></div>
 </HomePage>
 <HomePage className="grid grid-rows-2">
-    <div class="relative">
+    <div class="relative py-3">
         <BlurCircle className="absolute top-1/2 -right-40 -translate-x-1/2 -translate-y-1/2 z-0"/>
-        <span class="relative z-10 text-center overflow-hidden block px-14">
-            <h4 class="text-3xl mb-3 font-semibold">HIT serves as school’s partner in leveraging technology to enhance the learning experience for a smarter society.</h4>
-            <h6 class="text-center">We aim to be a one-stop solution for schools, offering comprehensive technological advancements across all systems and functions. Our services encompass everything from hardware and SaaS to AI solutions, addressing every aspect of the school environment-from the entrance to the classroom.</h6>
+        <span class="relative z-10 overflow-hidden block px-14">
+            <h4 class="text-xl mb-3 text-justify font-semibold">HIT serves as school’s partner in leveraging technology to enhance the learning experience for a smarter society.</h4>
+            <h6 class="text-justify">We aim to be a one-stop solution for schools, offering comprehensive technological advancements across all systems and functions. Our services encompass everything from hardware and SaaS to AI solutions, addressing every aspect of the school environment-from the entrance to the classroom.</h6>
         </span>
     </div>
-    <div class="relative">
+    <div class="relative py-3">
         <BlurCircle className="absolute top-1/2 -left-40 -translate-x-1/2 -translate-y-1/2 z-0"/>
         <span class="relative z-10 text-center overflow-hidden block px-14">
+            <CounterBox number={20} unit={"K"} text={"Schools"}/>
             <CounterBox number={20} unit={"K"} text={"Schools"}/>
         </span>
     </div>

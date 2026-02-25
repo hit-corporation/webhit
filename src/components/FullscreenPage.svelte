@@ -1,7 +1,7 @@
 <script>
-    let props = $props();
+    const { children, className = "" } = $props();
 </script>
 
-<div class={[ "h-screen w-screen relative", props.className ]}>
-    {@render props.children?.()}
+<div class={[ "h-screen w-screen relative", className ]}>
+    {@render children?.()}
 </div>
