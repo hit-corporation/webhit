@@ -3,10 +3,10 @@
 @import 'tailwindcss/utilities';
 
 body {
-    @apply overflow-x-hidden w-screen;
+    @apply overflow-x-hidden w-screen text-slate-700;
 }
 
-#wrapper {
+#wrapper, html, body {
     @apply min-h-screen w-screen relative;
 }
 
