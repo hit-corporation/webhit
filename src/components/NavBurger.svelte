@@ -4,7 +4,7 @@
     
 </script>
 
-<label class={[className, "md:hidden flex flex-col gap-y-1 p-2 rounded mr-16 justify-center items-center relative z-40"]} for="nav-burger">
+<label class={[className, "md:hidden flex flex-col gap-y-1 p-2 rounded justify-center items-center relative z-40"]} for="nav-burger">
     <input type="checkbox" class="hidden" id="nav-burger" onclick={toggleNav}  />
     <span class={'burger-1 ' + burgerClass}></span>
     <span class={'burger-2 ' + burgerClass}></span>

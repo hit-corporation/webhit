@@ -10,6 +10,6 @@
 
 
 
-<div {...restProps} class={["w-full pb-10 pt-20", className]}>
+<div {...restProps} class={["w-full pb-5 pt-16", className]}>
     {@render restProps.children?.()}
 </div>
