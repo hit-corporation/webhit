@@ -8,17 +8,10 @@
     import * as Card from "@/components/ui/card/index.ts";
     import * as Tabs from "@/components/ui/tabs/index.ts";
     import { onMount } from "svelte";
+    import SaasTab from "@/components/home/SaasTab.svelte";
 
     let src = "/videos/bumper_new.mp4";
 
-    onMount(() => {
-        fetcher();
-    })
-    const fetcher = async () => {
-        const res = await fetch("/api/folders");
-        const data = await res.json();
-        console.log(data);
-    }
 </script>
 
 <FullscreenPage className="bg-slate-800/30">
@@ -112,13 +105,38 @@
     <Tabs.Root class="w-auto">
         <Tabs.List>
             <Tabs.Trigger value="woowedu"><img src="/images/home/Logo-WoowEdu.webp" alt="WOOW EDU"></Tabs.Trigger>
-            <Tabs.Trigger value="woowtime"><img src="/images/home/Logo-WooWTime.webp" alt="WOOW TIME"></Tabs.Trigger>
-            <Tabs.Trigger value="woowspeech"><img src="/images/home/Logo-WooWLibrary.webp" alt="WOOW SPEECH"></Tabs.Trigger>
             <Tabs.Trigger value="woowmobile"><img src="/images/home/Logo-WooWMobile.webp" alt="WOOWTIME MOBILE"></Tabs.Trigger>
+            <Tabs.Trigger value="woowtime"><img src="/images/home/Logo-WooWTime.webp" alt="WOOW TIME"></Tabs.Trigger>
+            <Tabs.Trigger value="woowlibrary"><img src="/images/home/Logo-WooWLibrary.webp" alt="WOOW SPEECH"></Tabs.Trigger>
         </Tabs.List>
-        <Tabs.Content value="woowedu">Account content</Tabs.Content>
-        <Tabs.Content value="woowtime">Password content</Tabs.Content>
-        <Tabs.Content value="woowspeech">Password content</Tabs.Content>
+        <Tabs.Content class="px-3" value="woowedu">
+            <SaasTab 
+                tabValue="WoowEdu"
+                title="WooWEdu Innovative Platform Digital Learning In Schools"
+                description="help improve learning and teaching activities for students, teachers, school principals and parents which can be done anytime and anywhere."
+            />
+        </Tabs.Content>
+        <Tabs.Content class="px-3" value="woowmobile">
+            <SaasTab 
+                tabValue="WoowMobile"
+                title="WooWMobile is Easy, Fast, Efficient in Just One Application!"
+                description="helps improve teaching and learning activities for students, teachers, school principals and parents which can be done anytime and anywhere."
+            />
+        </Tabs.Content>
+        <Tabs.Content class="px-3" value="woowtime">
+            <SaasTab 
+                tabValue="WoowTime" 
+                title="WooWTime has been trusted & contributed by more than 100+ Companies in Indonesia and Abroad"
+                description="A cloud-based application that has been proven to be able to handle 10,000+ attendance machines from a company and has been used for more than 5 years, with Indonesian and overseas customers."
+            />
+        </Tabs.Content>
+        <Tabs.Content class="px-3" value="woowlibrary">
+            <SaasTab 
+                tabValue="WoowLibrary"
+                title="WooW Library Practical Solution for Borrowing and Storing Books Digitally!"
+                description="WooWLibrary is a web-based digital library that can monitor book borrowing activities, and can be used as a book storage medium."
+            />
+        </Tabs.Content>
     </Tabs.Root>
 </HomePage>
 
